@@ -38,5 +38,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %{_bindir}/*
 %{_datadir}/%{name}
-%{python_sitelib}/*
+%{python_sitearch}/*
 %{_datadir}/ibus/engine/*.engine

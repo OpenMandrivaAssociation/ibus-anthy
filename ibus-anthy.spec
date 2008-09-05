@@ -1,4 +1,4 @@
-%define	version 0.1.1.20080828
+%define	version 0.1.1.20080901
 %define	release %mkrel 1
 
 Name:      ibus-anthy
@@ -14,6 +14,7 @@ BuildRequires: anthy-devel
 BuildRequires: python-devel
 BuildRequires: swig
 Requires:	ibus
+Requires:	anthy
 
 %description
 ibus - Japanese Anthy engine.

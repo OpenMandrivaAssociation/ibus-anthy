@@ -1,5 +1,5 @@
 %define	version 0.1.1.20080912
-%define	release %mkrel 1
+%define	release %mkrel 2
 
 Name:      ibus-anthy
 Summary:   ibus - Japanese Anthy engine

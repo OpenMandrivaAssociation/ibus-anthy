@@ -1,5 +1,5 @@
-%define	version 0.1.1.20080912
-%define	release %mkrel 2
+%define	version 1.1.0.20090205
+%define	release %mkrel 1
 
 Name:      ibus-anthy
 Summary:   ibus - Japanese Anthy engine
@@ -13,7 +13,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: anthy-devel
 BuildRequires: python-devel
 BuildRequires: swig
-Requires:	ibus
+Requires:	ibus >= 1.1.0
 Requires:	anthy
 
 %description
@@ -37,7 +37,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %name.lang
 %defattr(-,root,root)
-%{_bindir}/*
+%{_libexecdir}/ibus-engine-anthy
 %{_datadir}/%{name}
+%{_datadir}/ibus/component/anthy.xml
 %{python_sitearch}/*
-%{_datadir}/ibus/engine/*.engine

@@ -38,6 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %name.lang
 %defattr(-,root,root)
 %{_libexecdir}/ibus-engine-anthy
+%{_libexecdir}/ibus-setup-anthy
 %{_datadir}/%{name}
 %{_datadir}/ibus/component/anthy.xml
 %{python_sitearch}/*

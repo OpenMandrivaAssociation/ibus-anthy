@@ -1,4 +1,4 @@
-%define	version 1.2.0.20090617
+%define	version 1.2.0.20090804
 %define	release %mkrel 1
 
 Name:      ibus-anthy

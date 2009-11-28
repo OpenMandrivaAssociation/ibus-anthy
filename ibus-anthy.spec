@@ -12,6 +12,7 @@ Source0:   http://ibus.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: anthy-devel
 BuildRequires: python-devel
+BuildRequires: intltool
 BuildRequires: swig
 Requires:	ibus >= 1.2.0
 Requires:	anthy

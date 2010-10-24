@@ -1,4 +1,4 @@
-%define	version 1.2.1
+%define	version 1.2.3
 %define	release %mkrel 1
 
 Name:      ibus-anthy

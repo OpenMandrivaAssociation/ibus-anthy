@@ -1,5 +1,5 @@
 %define	version 1.2.5
-%define	release %mkrel 1
+%define	release %mkrel 2
 
 Name:      ibus-anthy
 Summary:   ibus - Japanese Anthy engine
@@ -10,12 +10,14 @@ License:   GPLv2+
 URL:       http://code.google.com/p/ibus/
 Source0:   http://ibus.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires: ibus-devel >= 1.3.5-9
 BuildRequires: anthy-devel
 BuildRequires: python-devel
 BuildRequires: intltool
 BuildRequires: swig
 Requires:	ibus >= 1.2.0
 Requires:	anthy
+Requires(post,preun): GConf2
 
 %description
 ibus - Japanese Anthy engine.
@@ -32,6 +34,12 @@ rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
 %find_lang %name
+
+%post
+%post_ibus_register_engine anthy ja
+
+%preun
+%preun_ibus_unregister_engine anthy
 
 %clean
 rm -rf $RPM_BUILD_ROOT

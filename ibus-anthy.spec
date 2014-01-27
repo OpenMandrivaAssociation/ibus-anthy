@@ -18,8 +18,11 @@ BuildRequires:	pkgconfig(anthy)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(ibus-1.0)
 BuildRequires:	pkgconfig(python)
+BuildRequires:	python-gi
 Requires:	ibus
 Requires:	anthy
+Requires:	python-gi
+Requires:	%{girname} = %{EVRD}
 Suggests:	kasumi
 
 %description

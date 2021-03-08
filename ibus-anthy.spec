@@ -11,7 +11,7 @@ Release:	1
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://code.google.com/p/ibus/
-Source0:	https://github.com/ibus/ibus-anthy/archive/%{version}/%{name}-%{version}.tar.gz
+Source0:	https://github.com/ibus/ibus-anthy/releases/download/%{version}/ibus-anthy-%{version}.tar.gz
 BuildRequires:	ibus
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(anthy)
@@ -85,7 +85,7 @@ This package contains development files for ibus-anthy.
 
 # Remove bad config file found in the source tarball so it gets regenerated
 # https://bugs.archlinux.org/task/64520
-#rm {engine,setup}/python3/_config.py
+rm {engine,setup}/python3/_config.py
   
 %build
 %configure

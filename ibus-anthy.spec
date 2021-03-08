@@ -6,12 +6,12 @@
 
 Summary:	ibus - Japanese Anthy engine
 Name:		ibus-anthy
-Version:	1.5.11
+Version:	1.5.12
 Release:	1
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://code.google.com/p/ibus/
-Source0:	http://ibus.googlecode.com/files/%{name}-%{version}.tar.gz
+Source0:	https://github.com/ibus/ibus-anthy/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	ibus
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(anthy)

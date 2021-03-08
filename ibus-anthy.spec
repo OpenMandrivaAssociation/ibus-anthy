@@ -85,7 +85,7 @@ This package contains development files for ibus-anthy.
 
 # Remove bad config file found in the source tarball so it gets regenerated
 # https://bugs.archlinux.org/task/64520
-rm {engine,setup}/python3/_config.py
+#rm {engine,setup}/python3/_config.py
   
 %build
 %configure

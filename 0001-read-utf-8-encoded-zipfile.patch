@@ -1,0 +1,21 @@
+From: NOKUBI Takatsugu <knok@daionet.gr.jp>
+Date: Thu, 2 Nov 2017 15:11:52 +0900
+Subject: read utf-8 encoded zipfile
+
+---
+ data/zipcode-textdic.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/data/zipcode-textdic.py b/data/zipcode-textdic.py
+index 6fa50d6..d7311e8 100755
+--- a/data/zipcode-textdic.py
++++ b/data/zipcode-textdic.py
+@@ -21,7 +21,7 @@ if len(sys.argv) < 2:
+ anthy_zipfile = sys.argv[1]
+ 
+ try:
+-    contents = codecs.open(anthy_zipfile, 'r', 'euc_jp').read()
++    contents = codecs.open(anthy_zipfile, 'r', 'utf-8').read()
+ except UnicodeDecodeError as e:
+     print('Your file is not eucJP? %s' % anthy_zipfile, file=sys.stderr)
+     contents = open(anthy_zipfile).read()

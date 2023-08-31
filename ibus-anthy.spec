@@ -12,6 +12,7 @@ License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://code.google.com/p/ibus/
 Source0:	https://github.com/ibus/ibus-anthy/releases/download/%{version}/ibus-anthy-%{version}.tar.gz
+Patch1:    0001-read-utf-8-encoded-zipfile.patch
 BuildRequires:	ibus
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(anthy)
@@ -81,7 +82,7 @@ This package contains development files for ibus-anthy.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 
 # Remove bad config file found in the source tarball so it gets regenerated
 # https://bugs.archlinux.org/task/64520

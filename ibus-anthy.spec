@@ -6,7 +6,7 @@
 
 Summary:	ibus - Japanese Anthy engine
 Name:		ibus-anthy
-Version:	1.5.15
+Version:	1.5.16
 Release:	1
 License:	GPLv2+
 Group:		System/Internationalization

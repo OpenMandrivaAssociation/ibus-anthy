@@ -10,7 +10,7 @@ Version:	1.5.16
 Release:	1
 License:	GPLv2+
 Group:		System/Internationalization
-Url:		http://code.google.com/p/ibus/
+Url:		https://code.google.com/p/ibus/
 Source0:	https://github.com/ibus/ibus-anthy/releases/download/%{version}/ibus-anthy-%{version}.tar.gz
 Patch1:    0001-read-utf-8-encoded-zipfile.patch
 BuildRequires:	ibus

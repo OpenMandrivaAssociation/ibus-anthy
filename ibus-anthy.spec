@@ -13,6 +13,11 @@ Group:		System/Internationalization
 Url:		https://code.google.com/p/ibus/
 Source0:	https://github.com/ibus/ibus-anthy/releases/download/%{version}/ibus-anthy-%{version}.tar.gz
 Patch1:    0001-read-utf-8-encoded-zipfile.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	ibus
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(anthy)
